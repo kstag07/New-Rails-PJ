@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-NewRailsPj::Application.config.secret_key_base = 'b2a64831c9b07087e81ce9e3cf9349a414653b89853eee18b1f8e53ccff58337737f51da70c951e3dc965acd86a418345c05a43011904c591ac82c15ea21147d'
+NewRailsPj::Application.config.secret_key_base = '2b085ee511154549c53d6672f00c7e0e41de5356df51335e9e43051e04eee554dcc6d4bb1f60f261ccd72730f6e1983fcc30fc1dce63ac4846b53e11aaf62085'
