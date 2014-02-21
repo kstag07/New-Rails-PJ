@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  store_id: 1
+  store: MyString
+  ice_cream_id: 1
+  ice_cream: MyString
+
+two:
+  store_id: 1
+  store: MyString
+  ice_cream_id: 1
+  ice_cream: MyString
