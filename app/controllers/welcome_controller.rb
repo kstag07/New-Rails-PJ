@@ -1,4 +1,6 @@
 class WelcomeController < ApplicationController
-  def index
+  
+    def icecream
+      @list = List.new  
   end
 end

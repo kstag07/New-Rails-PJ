@@ -71,4 +71,6 @@ class StoresController < ApplicationController
     def store_params
       params.require(:store).permit(:name, :address, :ice_cream_brands, :flavor, :description, :text)
     end
+    
+    
 end
