@@ -1,0 +1,16 @@
+<h3>Welcome to the Site!</h3>
+<%= Time.now %>
+
+#<h1>Add unlisted brand or flavor</h1>
+
+<%= form_for @icecream do |form| %>
+
+<%=form.label :title, "Put your flavor here" %>
+
+<%= form.text field :title %>
+
+#<br/>
+
+<%=form.submit "Name your flavor!" %>
+
+<% end %>

@@ -1,6 +1,10 @@
 NewRailsPj::Application.routes.draw do
   resources :stores
-    get '/welcome', to: 'visitors#new'
+    get 'icecreams/new'
+
+   post 'icecreams', to: 'icecreams#create'
+    
+    get '/icecreams', to: 'icecreams#new'
 root to: 'stores#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
