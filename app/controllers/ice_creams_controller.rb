@@ -1,4 +1,4 @@
-class IcecreamsController < ApplicationController
+class IceCreamsController < ApplicationController
     
     def new
         @icecream = IceCream.new
