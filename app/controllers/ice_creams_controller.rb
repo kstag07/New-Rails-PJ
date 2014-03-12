@@ -6,11 +6,11 @@ class IceCreamsController < ApplicationController
         end
     
     def create
-        safe_params = params.require(:icecream).permit(:title)
+        safe_params = params.require(:ice_cream).permit(:store)
             @icecream = IceCream.new 
             safe_params
             if @icecream.save
-                redirect_to_stores_path
+                redirect_to stores_path
                 
                 else
                flash[:notice]= "Ice cream Didn't Save!!"

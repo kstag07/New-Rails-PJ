@@ -1,9 +1,11 @@
 NewRailsPj::Application.routes.draw do
+  devise_for :views
+  devise_for :stores
   resources :stores
     #get 'icecreams/new'
 
-   get '/icecreams', to: 'Icecreams#new'
-   post '/icecreams', to: 'icecreams#create'
+   get '/icecreams', to: 'ice_creams#new'
+   post '/icecreams', to: 'ice_creams#create', as: 'ice_creams'
     
     
 root to: 'stores#index'

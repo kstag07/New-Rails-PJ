@@ -5,7 +5,7 @@ class CreateStoreIceCreams < ActiveRecord::Migration
       t.string :store
       t.integer :ice_cream_id
       t.string :ice_cream
-
+        t.string :flavor
       t.timestamps
     end
   end
