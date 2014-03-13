@@ -6,7 +6,7 @@ class IceCreamsController < ApplicationController
         end
     
     def create
-        safe_params = params.require(:ice_cream).permit(:store)
+        safe_params = params.require(:ice_cream).permit(:flavor)
             @icecream = IceCream.new 
             safe_params
             if @icecream.save

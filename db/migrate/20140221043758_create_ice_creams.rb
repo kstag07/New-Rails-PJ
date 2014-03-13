@@ -3,7 +3,7 @@ class CreateIceCreams < ActiveRecord::Migration
     create_table :ice_creams do |t|
       t.integer :store_id
       t.string :store
-      add_column :flavor
+      t.string :flavor
 
       t.timestamps
     end
