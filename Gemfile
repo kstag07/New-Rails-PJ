@@ -21,10 +21,13 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 group :test, :development do
+    gem 'launchy'
     gem 'sqlite3'
     # Use sqlite3 as the database for Active Record
-gem 'rspec-rails'
-gem 'capybara-rails'
+gem 'rspec-rails', '~> 2.0'
+    end
+group :test do
+gem 'capybara', '~> 2.1.0'
     end
 #gem "therubyracer"
 
