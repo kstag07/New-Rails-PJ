@@ -11,3 +11,7 @@
  *= require_self
  *= require_tree .
  */
+body {
+ padding-top: 50px;
+    background-image:url("http://i.huffpost.com/gen/1187590/thumbs/o-SUMMER-ICE-CREAM-facebook.jpg");
+}

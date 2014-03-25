@@ -31,6 +31,7 @@ class StoresController < ApplicationController
         format.html { redirect_to @store, notice: 'Store was successfully created.' }
         format.json { render action: 'show', status: :created, location: @store }
       else
+          flash[:error] = "There was a problem adding the name."
         format.html { render action: 'new' }
         format.json { render json: @store.errors, status: :unprocessable_entity }
       end
@@ -64,7 +65,7 @@ class StoresController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_store
-      @store = Store.find(params[:id])
+      @store = Store.where(id: params[:id]).first
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

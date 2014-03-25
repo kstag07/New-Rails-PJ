@@ -19,15 +19,24 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
+gem 'carrierwave'
+gem 'launchy'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 group :test, :development do
-    gem 'launchy'
+
     gem 'sqlite3'
     # Use sqlite3 as the database for Active Record
 gem 'rspec-rails', '~> 2.0'
     end
 group :test do
 gem 'capybara', '~> 2.1.0'
+    end
+group :development do
+    gem 'better_errors'
+    gem 'binding_of_caller'
+    gem 'quiet_assets'
+    gem 'pry-rails'
     end
 #gem "therubyracer"
 
