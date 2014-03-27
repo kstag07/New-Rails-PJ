@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140320032356) do
+ActiveRecord::Schema.define(version: 20140326051229) do
 
   create_table "ice_creams", force: true do |t|
     t.integer  "store_id"
